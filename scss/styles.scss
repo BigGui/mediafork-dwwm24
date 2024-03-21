@@ -56,10 +56,11 @@ input {
     color: var(--light-grey);
 }
 
-@import "components/abstract";
-@import "components/footer";
-@import "components/form";
 @import "components/header";
-@import "components/portfolio";
-@import "components/section-ttl";
+@import "components/hero-banner";
+@import "components/abstract";
 @import "components/services";
+@import "components/section-ttl";
+@import "components/portfolio";
+@import "components/form";
+@import "components/footer";
