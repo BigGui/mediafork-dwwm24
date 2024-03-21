@@ -1,0 +1,67 @@
+
+
+
+
+/* hero-banner */
+.hero-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url(../img/hero-banner-l.webp);
+    background-size: cover;
+    background-position: inherit;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 767px) {
+    .hero-banner {
+        background-image: url(../img/hero-banner.webp);
+    }
+}
+
+.hero-banner__img-ttl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-banner__ttl {
+    font-weight: 900;
+    line-height: 87.5%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -5.5vmax;
+    color: var(--white);
+    font-size: min(6rem, 6vmin);
+}
+
+.hero-banner__img {
+    width: min(40vmin, 500px);
+}
+
+
+.hero-banner__btn {
+    display: block;
+    width: 60px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    margin-bottom: 2rem;
+}
+
+.hero-banner__btn:hover,
+.hero-banner__btn:focus {
+    background-color: #FB9179;
+    scale: 150%;
+}
+
+.hero-banner__btn::before {
+    content: url('data:image/svg+xml,<svg width="38" height="26" viewBox="0 0 38 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.0664 24.3086C18.1211 25.3633 19.8789 25.3633 20.9336 24.3086L36.8711 8.37109C38.043 7.19922 38.043 5.44141 36.8711 4.38672L34.293 1.69141C33.1211 0.636719 31.3633 0.636719 30.3086 1.69141L18.9414 13.0586L7.69141 1.69141C6.63672 0.636719 4.87891 0.636719 3.70703 1.69141L1.12891 4.38672C-0.0429688 5.44141 -0.0429688 7.19922 1.12891 8.37109L17.0664 24.3086Z" fill="white"/></svg>');
+    position: relative;
+    top: 20px;
+    left: 11px;
+    display: block;
+}

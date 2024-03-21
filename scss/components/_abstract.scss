@@ -1,0 +1,52 @@
+
+
+/* main  */
+
+/* Titles */
+.ttl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.ttl--secondary {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+.ttl__subtitle,
+.txt {
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.ttl__subtitle {
+    color: var(--white);
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 769px) {
+    .ttl__subtitle {
+        margin-top: 0;
+    }
+}
+
+/* Abstract Section */
+.abstract {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@media screen and (min-width: 769px) {
+    .abstract {
+        flex-direction: row;
+        gap: 5rem;
+        padding: 5rem;
+    }
+
+    .abstract__column {
+        width: 50%;
+    }
+}

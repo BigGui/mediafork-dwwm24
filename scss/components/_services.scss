@@ -1,0 +1,40 @@
+
+/* Services */
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.services__card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: var(--dark-grey);
+    color: var(--white);
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+}
+
+.services__card:hover {
+    background-color: var(--black);
+    color: var(--secondary);
+}
+
+.services__ttl {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.2;
+
+}
+
+
+@media screen and (min-width: 769px) {
+
+    .services {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

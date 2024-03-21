@@ -1,0 +1,65 @@
+:root {
+    font-size: 12px;
+    --primary: #FB9179;
+    --secondary: #BDBF09;
+    --dark-grey: #313335;
+    --light-grey: #989CA0;
+    --black: #151617;
+    --white: #FFFFFF;
+    --red-error: #A02828;
+    --instagram: #AC2BAC;
+    --facebook: #3B5998;
+    --twitter: #55ACEE;
+    --dark-grey-transparent: rgba(49, 51, 53, 0.7);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: var(--black);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+input {
+    appearance: none;
+}
+
+/* utils */
+
+.container {
+    margin: 0 2rem;
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        max-width: 1350px;
+        margin: 0 auto;
+    }
+}
+
+.txt {
+    color: var(--light-grey);
+}
+
+@import "components/abstract";
+@import "components/footer";
+@import "components/form";
+@import "components/header";
+@import "components/portfolio";
+@import "components/section-ttl";
+@import "components/services";
