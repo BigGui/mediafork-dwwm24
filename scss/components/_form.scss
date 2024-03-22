@@ -70,6 +70,10 @@
   .input__input--msg {
     height: 18rem;
   }
+  .input__input--txt-error {
+    font-size: 1.5rem;
+    text-align: end;
+  }
   /* check-conditions */
   .check-conditions {
     color: var(--light-grey);
